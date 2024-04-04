@@ -64,10 +64,14 @@ resource "aws_iam_group_membership" "team2" {
   group = aws_iam_group.hi2.name
 }
 
+#terraform import aws_iam_user.lb9 hi
 
-resource "aws_iam_user" "lb9" {
+resource "aws_iam_user" "lb9" {  
   name = "Miyeon"
 }
+
+#terraform import aws_iam_user.lb10 hi
+
 resource "aws_iam_user" "lb10" {
   name = "Mina"
 }
